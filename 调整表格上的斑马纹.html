@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- html5 shim and respond.js for IE8 support of html5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif] -->
+
+       <!-- jQuery (necessary for Bootstrap's Javascript plugisn) -->
+
+       <style type="text/css">
+       /*添加样式规则*/
+     .table-striped>tbody>tr:nth-of-type(odd){
+      background-color: #d6adfa;
+     }
+     
+   </style>
+ </head>
+ <body>
+  <div class="container"> 
+  <!-- table-striped为表格的<tbody>标记内的行添加底纹  table-bordered为表格添加边框 table-hover为表格行添加悬停状态 table-condensed将内边距减半，是表格更加紧凑 添加底纹在IE8中无法正常正常使用，可以使用javascript工具Selectivizer -->
+    <table class="table table-striped">
+      <caption>Contact Information</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>URL</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jennifer Kyrnin</td>
+          <td>Chief Dandylion</td>
+          <td>http://baidu.com</td>
+          <td>htmljenn@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jennifer Kyrnin</td>
+          <td>Chief Dandylion</td>
+          <td>http://baidu.com</td>
+          <td>htmljenn@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jennifer Kyrnin</td>
+          <td>Chief Dandylion</td>
+          <td>http://baidu.com</td>
+          <td>htmljenn@gmail.com</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4"><p>McKinley and Rambler are a dog and a horse,respectively.</p></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+      <script src="js/jquery.js"></script>
+   <!-- Include all compiled plugins (below),or include in individual files as needed -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+ </body>
+ </html>

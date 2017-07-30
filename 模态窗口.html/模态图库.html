@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <!-- html5 shim and respond.js for IE8 support of html5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif] -->
+
+       <!-- jQuery (necessary for Bootstrap's Javascript plugisn) -->
+<!-- javascript触发模态窗口 -->
+     <script type="text/javascript">
+       $('#myModal').modal(options);
+     </script>
+ </head>
+ <body>
+ <div class="container">
+   <a href="#" data-toggle="modal" data-target="#myModal" data-imagetitle="雪山" dat-imagesource="../image/雪山.png">
+   <img src="../image/雪山.png" alt="雪山" class="img-thumbnail">
+   </a>
+   <a href="#" data-toggle="modal" data-target="#myModal" data-imagetitle="simpledesktops" dat-imagesource="../image/simpledesktops.png"> <img src="../image/simpledesktops.png" alt="simpledesktops" class="img-thumbnail"></a>
+ </div>
+ <!-- 模态窗口 -->
+ <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- 设置模态窗口的宽度 -->
+   <div class="modal-dialog modal-sm">
+   <!-- 定义内容区域 -->
+     <div class="modal-content">
+    <!-- 模态窗口的页眉或顶部 -->
+       <div class="modal-header">
+       <!-- data-dismiss属性单机按钮时关闭模态窗口 -->
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+     <!-- 模态窗口的标题 -->
+         <h4 class="modal-title">My Modal</h4>
+       </div>
+       <!-- 模态窗口的主要内容 -->
+       <div class="modal-body">
+
+       </div>
+       </div>
+       <!-- 模态窗口的页脚或底部 -->
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+   ...
+ 
+
+      <script src="../js/jquery.js"></script>
+   <!-- Include all compiled plugins (below),or include in individual files as needed -->
+   <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript">
+ $('#myModal').on('show.bs.modal',function (event) {
+   // body...
+   var button = $(event.relatedTarget);
+   var recipient = button.data('imagetitle');
+   var source = button.data('imagesource');
+   var modal =$(this);
+   modal.find('.modal-title').text(recipient);
+   modal.find('.modal-body').html('<img src="' + source + '" alt="'+ recipient + '" class="center-block">');
+ })
+ </script>
+ </body>
+ </html>

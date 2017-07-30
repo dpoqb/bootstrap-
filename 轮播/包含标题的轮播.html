@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <!-- html5 shim and respond.js for IE8 support of html5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif] -->
+
+       <!-- jQuery (necessary for Bootstrap's Javascript plugisn) -->
+
+   <style type="text/css">
+     .item h1{
+      width: 10em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2em;
+     }
+     .carousel-indicators li, .carousel-indicators .active{
+      border-color: #000;
+     }
+     .carousel-indicators .active{
+      background-color: #000;
+     }
+     /*将指标放在顶部*/
+     .carousel-indicators{
+      top: 10px;  
+     }
+   </style>
+ </head>
+ <body>
+ <div class="container">
+ <div id="myCarousel" class="carousel" data-ride="carousel">
+  <!-- 轮播指标 -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 幻灯片 -->
+  <div class="carousel-inner " role="listbox">
+  <!-- 定义媒介内容的分组，以及它们的标题 -->
+    <figure class="item active">
+      <img src="../image/1391981732018880.jpg" alt="snow" class="center-block img-responsive">
+      <!-- 定义figure元素的标题 -->
+      <figcaption class="carousel-caption"><h1>Snow</h1></figcaption>
+    </figure>
+    <figure class="item"> 
+      <img src="../image/1393081244676956.jpg" alt="reed" class="center-block img-responsive">
+      <figcaption class="carousel-caption"><h1>Red</h1></figcaption>
+    </figure>
+    <figure class="item">
+      <img src="../image/1406275378671221.jpg" alt="Mouse" class="center-block img-responsive">
+      <figcaption class="carousel-caption"><h1>Mouse</h1></figcaption>
+    </figure>
+  </div>
+  <!-- 轮播控件 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+ </div>
+</div>
+
+    
+      <script src="../js/jquery.js"></script>
+   <!-- Include all compiled plugins (below),or include in individual files as needed -->
+   <script src="../bootstrap/js/bootstrap.min.js"></script>
+ </body>
+ </html>
